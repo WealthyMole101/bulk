@@ -19,7 +19,7 @@ void Saver::init()
     }
 }
 
-void Saver::save(vector<string>& data)
+void Saver::out(vector<string>& data)
 {
     ofstream file;
     file.open(m_filename, std::ios::out);

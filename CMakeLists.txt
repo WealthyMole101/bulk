@@ -10,7 +10,7 @@ configure_file(version.h.in version.h)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-add_executable(bulk main.cpp analyzer.h analyzer.cpp saver.h saver.cpp)
+add_executable(bulk main.cpp analyzer.h analyzer.cpp saver.h saver.cpp out.h printer.h printer.cpp)
 
 if (MSVC)
     target_compile_options(bulk PRIVATE
